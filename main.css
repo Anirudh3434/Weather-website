@@ -264,11 +264,86 @@ button:hover{
     }
 }
 
-@media only-screen and (max-width: 600px){
-  .container{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-  }
+@media only screen and (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .input, .output {
+        flex: none;
+        margin: 10px;
+        width: auto;
+    }
+
+    input {
+        width: 90%;
+        font-size: 18px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 18px;
+        border-radius: 10px;
+    }
+
+    .inputBar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 100%;
+        height: auto;
+    }
+
+    .outputSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .outputSection2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .addInfo {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .weatherContent, .ImgCard {
+        width: 100%;
+        align-items: center;
+    }
+
+    .temp {
+        font-size: 40px;
+    }
+
+    .humidity, .wind, .sunR, .sunS {
+        font-size: 20px;
+    }
+
+    .weatherUpdate {
+        font-size: 18px;
+    }
+
+    .inputHeading, .outputHeading {
+        font-size: 25px;
+    }
+
+    .inputHeading{
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .nav{
+        margin-bottom: 50px;
+    }
 }
+
 
