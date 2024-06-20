@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+
+<link rel="stylesheet" href="main.css">
+
+</head>
+<body class="back">
+    <header>
+        <nav class="nav">
+           <span class="title">Weather.<span class="h" >24</span></span>
+        </nav>
+    </header>
+    <section class="container">
+        <div class="input">
+
+      <span class="inputHeading">  Different kind of weather <br> inside 24/7</span>
+        <br>
+        <div class="inputBar">
+            <input type="text" id="search-box" placeholder="Search Zip, City, Place">
+        <button id="btn" class="btn">Get Update</button>
+        </div>
+        </div>
+        <div class="output">
+            <div class="box">
+                 <div class="outputHeading">
+                      <span>Weather Forecast</span>
+                     </div>
+
+                     <div class="outputSection">
+                        <div class="ImgCard">
+                        <img src="" class="Wimg"  width="200px" height="200px">
+                     </div> 
+                      <div class="weatherContent">
+                               <span class="temp" id="temp">--</span>
+                               <span class="weatherUpdate"></span>
+                             
+                              
+                      </div>
+                </div>  
+                <div class="outputSection2 ">
+                              
+                    <div class="addInfo">
+                             <img src="humidity.png"  width="100px" height="100px">
+                             <span class="humidity" id="humidity">--%</span>
+                             <span class="info">Humidity</span>
+                    </div>
+
+                    <div class="addInfo">
+                        <img src="wind.png" alt="" width="100px" height="100px">
+                        <span class="wind" id="wind">-- km/h</span>
+                        <span class="info">Wind</span>
+                    </div>
+
+                    <div class="addInfo">
+                       
+                            <img src="sunRise.png" alt="" width="100px" height="100px">
+                            <span class="sunR" id="sunR">__ AM</span>
+                            <span class="info">Sunrise</span>
+                        
+                    </div>
+                    <div class="addInfo">
+                        <img src="sunSet.png" alt="" width="100px" height="100px">
+                        <span class="sunS" id="sunS">__ AM</span>
+                        <span class="info">Sunset</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>

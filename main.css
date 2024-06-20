@@ -1,0 +1,274 @@
+body {
+    background-image: url("background.jpeg");
+    margin: 0;
+}
+
+h4{
+    color: white;
+    font-family: Noto Sans, sans-serif;
+}
+
+#weather{
+    color: white;
+    font-family: Noto Sans, sans-serif;
+}
+
+.nav{
+    background-color: black;
+    opacity: 0.5;
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+}
+.title{
+    color: white;
+    font-size: 30px;
+    font-family: Optima, sans-serif;
+}
+.h{
+    color: rgb(70, 204, 200);
+    font-size: 30px;
+    font-family: Optima, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    margin: 20px;
+    animation: slideRight .5s ease-in-out;
+    
+
+}
+
+
+input{
+    width: 50%;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid white;
+    backdrop-filter: blur(10px);
+    outline: none;
+    font-size: 25px;
+    font-family: Noto Sans, sans-serif;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+input::placeholder{
+    font-size: 20px;
+    font-family: Noto Sans, sans-serif;
+}
+
+.inputBar{
+    display: flex;
+     
+    width: 100%;
+
+}
+
+button{
+    padding: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: whitesmoke;
+    background-color: rgb(70, 204, 200);
+    font-weight: 700;
+    border: 2px solid white;
+    font-size: 20px;
+    transition: ease-in-out .4s;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(70, 170, 166);
+    transition: ease-in-out .4s;
+}
+
+.inputHeading{
+  
+   font-family: Noto Sans, sans-serif;
+    font-size: 30px;
+    color: whitesmoke;
+    font-weight: 100;
+
+}
+
+
+.output {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.box{
+    width: 600px;
+    height: 500px;
+    border-radius: 10px;
+    margin: 20px;
+    backdrop-filter: blur(10px);
+    background-color: transparent;
+    padding: 20px;
+    box-shadow: rgb(44, 44, 44) 0px 5px 15px;
+    animation: slideLeft .5s ease-in-out;
+}
+
+.outputHeading{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    color: aliceblue;
+    font-family: Noto Sans, sans-serif;
+    font-weight: bold;
+}
+
+.outputSection{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.ImgCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     width: 100vh;
+    
+     animation: slideLeft .5s ease-in-out;
+ 
+}
+
+.weatherContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vh;
+   
+}
+
+.temp{
+    font-size:60px;
+    font-family: Noto Sans, sans-serif;
+    font-weight: bold;
+    color: aliceblue;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.outputSection2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+
+}
+
+
+
+.addInfo{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    opacity: 0.5;
+    margin: 5px;
+    border-radius: 5px;
+    align-items: center;
+    margin: 10px;
+    animation: slideLeft .5s ease-in-out;
+    animation: slideUp 1s ease-in-out;
+}
+.humidity,.wind,.sunR,.sunS{
+    font-size:30px;
+    font-family: Noto Sans, sans-serif;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+
+.info{
+    font-family: Noto Sans, sans-serif ;
+    margin-top: 5px;
+    font-weight: 700;
+}
+.weatherUpdate{
+    margin-top: 10px;
+    font-size: 25px;
+    color: white;
+    font-family: Noto Sans, sans-serif;
+}
+
+@keyframes slideLeft{
+
+    0%{
+        transform: translateX(100px);
+    }
+
+   
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+
+@keyframes slideRight{
+
+    0%{
+        transform: translateX(-100px);
+    }
+
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+
+@keyframes slideUp {
+   
+    0%{
+        transform: translateY(100px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+@keyframes fadeIn {
+    0%{ 
+       
+        opacity: 0;
+    }
+ 
+   
+
+    100%{
+       opacity: 1;
+    }
+}
+
+@media only-screen and (max-width: 600px){
+  .container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+}
+
