@@ -264,17 +264,19 @@ button:hover{
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1100px) {
     .container {
         display: flex;
         flex-direction: column;
         height: auto;
+        transition: ease-in-out .5s;
     }
 
     .input, .output {
         flex: none;
         margin: 10px;
         width: auto;
+        transition: ease-in-out .5s;
     }
 
     input {
@@ -282,67 +284,81 @@ button:hover{
         font-size: 18px;
         border-radius: 10px;
         margin-bottom: 10px;
+        transition: ease-in-out .5s;
     }
 
     button {
-        width: 100%;
+        width: 90%;
         font-size: 18px;
         border-radius: 10px;
+        transition: ease-in-out .5s;
     }
 
     .inputBar {
         flex-direction: column;
         align-items: center;
+        transition: ease-in-out .5s;
     }
 
     .box {
         width: 100%;
         height: auto;
+        transition: ease-in-out .5s;
     }
 
     .outputSection {
         flex-direction: column;
         align-items: center;
+        transition: ease-in-out .5s;
     }
 
     .outputSection2 {
         flex-direction: column;
         align-items: center;
+        transition: ease-in-out .5s;
     }
 
     .addInfo {
         width: 100%;
         margin: 5px 0;
+        transition: ease-in-out .5s;
     }
 
     .weatherContent, .ImgCard {
         width: 100%;
         align-items: center;
+        transition: ease-in-out .5s;
     }
 
     .temp {
         font-size: 40px;
+        transition: ease-in-out .5s;
     }
 
     .humidity, .wind, .sunR, .sunS {
         font-size: 20px;
+        transition: ease-in-out .5s;
     }
 
     .weatherUpdate {
         font-size: 18px;
+        transition: ease-in-out .5s;
     }
 
     .inputHeading, .outputHeading {
         font-size: 25px;
+        transition: ease-in-out .5s;
     }
 
     .inputHeading{
         margin-top: 60px;
         text-align: center;
+        transition: ease-in-out .5s;
     }
 
     .nav{
         margin-bottom: 50px;
+        transition: ease-in-out .5s;
     }
 }
 
