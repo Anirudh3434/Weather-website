@@ -207,6 +207,13 @@ button:hover{
     margin-top: 5px;
     font-weight: 700;
 }
+
+.cityName{
+    margin-top: 10px;
+    font-size: 25px;
+    color: white;
+    font-family: Noto Sans, sans-serif; 
+}
 .weatherUpdate{
     margin-top: 10px;
     font-size: 25px;

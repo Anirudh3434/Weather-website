@@ -6,9 +6,12 @@ search.addEventListener('click', () => {
 
     if (city === '') return;
 
+
+
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKEY}`)
         .then(response => response.json())
         .then(json => {
+            var cityN = document.querySelector('.cityName')
             var image = document.querySelector('.Wimg');
             var temp = document.querySelector('.temp');
             var humidity = document.querySelector('.humidity');
@@ -83,13 +86,31 @@ search.addEventListener('click', () => {
             var sunriseTime = new Date(json.sys.sunrise * 1000).toLocaleTimeString();
             var sunsetTime = new Date(json.sys.sunset * 1000).toLocaleTimeString();
             var weatherStatement = json.weather[0].main;
-
+      
             temp.textContent = `${temperatureCelsius} °C`;
             humidity.textContent = `${humidityValue}%`;
             wind.textContent = `${windSpeed} m/s`;
             sunrise.textContent = `${sunriseTime}`;
+            cityN.textContent = `${city}`
             sunset.textContent = `${sunsetTime}`;
             weatherUpdate.textContent = `It's ${weatherStatement}`;
+
+               if(temperatureCelsius <= 10){
+                     temp.style.color = 'blue'
+               }
+
+               if(temperatureCelsius <= 40){
+                temp.style.color = 'green'
+               }
+
+               if(temperatureCelsius > 40){
+                temp.style.color = 'yellow'
+               }
+
+               if(temperatureCelsius > 50){
+                temp.style.color = 'red'
+               }
+
         })
         .catch(error => {
             console.error('Error fetching weather data:', error);
